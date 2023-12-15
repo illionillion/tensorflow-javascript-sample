@@ -1,6 +1,11 @@
+"use strict"
 const handleFIleChange = async e => {
     console.log(e.target.files);
     if(e.target.files.length === 0) return
+    const loading = document.getElementById("loading-container")
+    const resultPreview = document.getElementById("result-preview")
+    loading.classList.remove("none")
+    resultPreview.classList.add("none")
     const file = e.target.files[0]
     const imageObj = new Image()
     imageObj.src = URL.createObjectURL(file)
@@ -30,10 +35,11 @@ const handleFIleChange = async e => {
     }
 
     const base64 = canvas.toDataURL("image/jpeg");
-    document.getElementById("result-preview").classList.remove("none")
+    resultPreview.classList.remove("none")
     document.getElementById("result-preview-image").src = base64;
     document.getElementById("result-preview-download").href = base64;
     document.getElementById("result-preview-download").download = file.name;
+    loading.classList.add("none")
 }
 
 const main = async () => {

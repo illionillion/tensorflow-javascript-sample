@@ -36,8 +36,14 @@ h1 {
 #result-preview {
     width: 50%;
     padding-block: 1rem;
+    text-align: center;
 }
 
 #result-preview #result-preview-image{
     width: 100%;
+}
+
+#loading-container {
+    text-align: center;
+    padding-block: 1rem;
 }
