@@ -1,49 +1,49 @@
 * {
-    margin: auto;
-    padding: auto;
+  margin: auto;
+  padding: auto;
 }
 
 h1 {
-    text-align: center;
-    padding-block: 1rem;
+  text-align: center;
+  padding-block: 1rem;
 }
 
 .input-container {
-    max-width: 300px;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  max-width: 300px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 .input-container label[for="file-input"] {
-    width: 100%;
-    text-align: left;
+  width: 100%;
+  text-align: left;
 }
 .input-container #file-input {
-    width: 100%;
-    text-align: left;
+  width: 100%;
+  text-align: left;
 }
 
 .canvas-container {
-    display: none;
+  display: none;
 }
 
 .none {
-    display: none;
+  display: none;
 }
 
 #result-preview {
-    width: 50%;
-    padding-block: 1rem;
-    text-align: center;
+  width: 50%;
+  padding-block: 1rem;
+  text-align: center;
 }
 
-#result-preview #result-preview-image{
-    width: 100%;
+#result-preview #result-preview-image {
+  width: 100%;
 }
 
 #loading-container {
-    text-align: center;
-    padding-block: 1rem;
+  text-align: center;
+  padding-block: 1rem;
 }

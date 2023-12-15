@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tensorflow.jsサンプル</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <script type="importmap">
-        {
-          "imports": {
-            "tfjs": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs",
-            "coco-ssd": "https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"
-          }
+      {
+        "imports": {
+          "tfjs": "https://cdn.jsdelivr.net/npm/@tensorflow/tfjs",
+          "coco-ssd": "https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"
         }
-      </script>
+      }
+    </script>
     <script type="module" src="./js/main.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <h1>オブジェクト検出サンプル</h1>
     <div class="input-container">
-        <label for="file-input">画像を選択</label>
-        <input type="file" id="file-input" accept="image/*">
+      <label for="file-input">画像を選択</label>
+      <input type="file" id="file-input" accept="image/*" />
     </div>
     <div class="canvas-container">
-        <canvas id="result-canvas"></canvas>
+      <canvas id="result-canvas"></canvas>
     </div>
     <div id="loading-container" class="none">
-        <p>処理中・・・</p>
+      <p>処理中・・・</p>
     </div>
     <div id="result-preview" class="none">
-        <img id="result-preview-image" src="" alt="">
-        <a id="result-preview-download" href="" download="">ダウンロード</a>
+      <img id="result-preview-image" src="" alt="" />
+      <a id="result-preview-download" href="" download="">ダウンロード</a>
     </div>
-</body>
+  </body>
 </html>
