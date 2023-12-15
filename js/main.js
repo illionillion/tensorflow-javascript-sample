@@ -2,7 +2,7 @@
 import "tfjs";
 import "coco-ssd";
 
-const handleFIleChange = async (e) => {
+const handleFileChange = async (e) => {
   if (e.target.files.length === 0) return;
   const loading = document.getElementById("loading-container");
   const resultPreview = document.getElementById("result-preview");
@@ -47,7 +47,7 @@ const handleFIleChange = async (e) => {
 const main = async () => {
   document
     .getElementById("file-input")
-    .addEventListener("change", handleFIleChange);
+    .addEventListener("change", handleFileChange);
 };
 
 window.addEventListener("load", main);
