@@ -22,8 +22,8 @@ const handleFIleChange = async e => {
             context.beginPath()
             context.rect(...p.bbox)
             context.lineWidth = 1
-            context.strokeStyke = "red"
-            context.fillStyke = "red"
+            context.strokeStyle = "black"
+            context.fillStyle = "black"
             context.stroke()
             context.fill()
         }
