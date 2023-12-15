@@ -1,6 +1,8 @@
 "use strict"
+import "tfjs"
+import "coco-ssd"
+
 const handleFIleChange = async e => {
-    console.log(e.target.files);
     if(e.target.files.length === 0) return
     const loading = document.getElementById("loading-container")
     const resultPreview = document.getElementById("result-preview")
