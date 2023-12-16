@@ -13,8 +13,8 @@ import "coco-ssd";
     loading.classList.remove("none");
     resultPreview.classList.add("none");
 
-    imageList = []
-    currentIndex = 0
+    imageList = [];
+    currentIndex = 0;
 
     for (let i = 0; i < e.target.files.length; i++) {
       const file = e.target.files[i];
@@ -53,27 +53,23 @@ import "coco-ssd";
     }
 
     resultPreview.classList.remove("none");
-    document.getElementById("result-preview-image").src = imageList[currentIndex].url;
-    document.getElementById("result-preview-download").href = imageList[currentIndex].url;
-    document.getElementById("result-preview-download").download =
-      imageList[currentIndex].name;
+    updatePreview();
     loading.classList.add("none");
   };
 
   const prev = () => {
     if (currentIndex === 0 || !imageList.length) return;
     currentIndex--;
-    document.getElementById("result-preview-image").src =
-      imageList[currentIndex].url;
-    document.getElementById("result-preview-download").href =
-      imageList[currentIndex].url;
-    document.getElementById("result-preview-download").download =
-      imageList[currentIndex].name;
+    updatePreview();
   };
 
   const next = () => {
     if (currentIndex >= imageList.length - 1 || !imageList.length) return;
     currentIndex++;
+    updatePreview();
+  };
+
+  const updatePreview = () => {
     document.getElementById("result-preview-image").src =
       imageList[currentIndex].url;
     document.getElementById("result-preview-download").href =
