@@ -19,7 +19,7 @@
     <h1>オブジェクト検出サンプル</h1>
     <div class="input-container">
       <label for="file-input">画像を選択</label>
-      <input type="file" id="file-input" accept="image/*" />
+      <input type="file" id="file-input" accept="image/*" multiple />
     </div>
     <div class="canvas-container">
       <canvas id="result-canvas"></canvas>
@@ -29,7 +29,9 @@
     </div>
     <div id="result-preview" class="none">
       <img id="result-preview-image" src="" alt="" />
+      <input type="button" value="&lt;" id="prev-button">
       <a id="result-preview-download" href="" download="">ダウンロード</a>
+      <input type="button" value="&gt;" id="next-button">
     </div>
   </body>
 </html>
