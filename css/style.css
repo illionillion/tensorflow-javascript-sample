@@ -6,7 +6,7 @@
 h1 {
   text-align: center;
   padding-block: 1rem;
-  text-shadow: 1px 2px 3px #808080; 
+  text-shadow: 1px 2px 3px #808080;
 }
 
 .input-container {
@@ -47,4 +47,20 @@ h1 {
 #loading-container {
   text-align: center;
   padding-block: 1rem;
+}
+
+.result-controller {
+  display: flex;
+}
+
+#result-preview-download {
+  flex: 5;
+}
+
+#prev-button {
+  flex: 1;
+}
+
+#next-button {
+  flex: 1;
 }
