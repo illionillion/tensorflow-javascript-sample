@@ -76,13 +76,14 @@ const updatePreview = () => {
     imageList[currentIndex].name;
 };
 
-const generateRandomColor = () => {
-  const r = Math.floor(Math.random() * 256);
-  const g = Math.floor(Math.random() * 256);
-  const b = Math.floor(Math.random() * 256);
-  console.log(`rgb(${r},${g},${b})`)
-  return `rgb(${r},${g},${b})`;
-}
+  const generateRandomColor = () => {
+    const rand = () => Math.floor(Math.random() * 256);
+    const r = rand();
+    const g = rand();
+    const b = rand();
+    console.log(`rgb(${r},${g},${b})`);
+    return `rgb(${r},${g},${b})`;
+  };
 
 const main = async () => {
   document
