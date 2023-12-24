@@ -68,6 +68,7 @@ import "coco-ssd";
   };
 
   const updatePreview = () => {
+    document.getElementById("result-pagination").textContent = `${currentIndex + 1} / ${imageList.length}`
     document.getElementById("result-preview-image").src =
       imageList[currentIndex].url;
     document.getElementById("result-preview-download").href =
